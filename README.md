@@ -1,21 +1,19 @@
-PickerView (2.x系列)
+Android-District-Picker
 ==========
 
-精仿iOS的PickerView控件，有时间选择和选项选择并支持一二三级联动效果   
-——TimePickerView  时间选择器，支持年月日时分，年月日，年月，时分等格式   
-——OptionsPickerView  选项选择器，支持一，二，三级选项选择，并且可以设置是否联动    
-
-2.x是全新的3D效果，比1.x版本更加贴近iOS的效果，从外观细节上也得到了改善。api兼容1.x版本，只需要把依赖的版本号升级即可，几乎不用修改代码即可完成升级。
-
-####使用gradle 依赖:
+再android-pickerView 的基础上进行了部分修改， 主要添加了对字体长度的判读已达到字长时显示小字体字短时显示打字体
 ```java
-   compile 'com.bigkoo:pickerview:2.0.8'
+         String contentText = getContentText(visibles[counter]);
+         // my added code here
+         if (contentText.length() < 5) setTextSize(18);
+         else if (contentText.length() >= 5 && contentText.length() < 7) setTextSize(15);
+         else if (contentText.length() >= 7) setTextSize(11);
+
 ```
-
 ## Demo 图片
-![](https://github.com/saiwu-bigkoo/PickerView/blob/master/preview/pickerdemo.gif)
+![](https://github.com/saiwu-bigkoo/PickerView/blob/master/preview/pick-demo.gif)
 
-- [demo代码请看戳这里](https://github.com/saiwu-bigkoo/Android-PickerView/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/MainActivity.java)
+- [demo code here](https://github.com/1212300114/Android-District-Picker/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/MainActivity.java)
 
 
 >## 更新说明
@@ -72,3 +70,4 @@ PickerView1.x (我已经把1.0.3版本分到v1.x的分支去了，停止维护1.
 
 - WheelView
 - [androidWheelView](https://github.com/weidongjian/androidWheelView/)
+- [Android-PickerView](https://github.com/saiwu-bigkoo/Android-PickerView)
