@@ -70,11 +70,9 @@ public class MainActivity extends Activity {
                     ArrayList<String> distrinctNames = new ArrayList<>();
                     for (int k = 0; k < districtList.size(); k++) {
                         // add district names to array
-                        // 区/县对于的邮编，保存到mZipcodeDatasMap
                         distrinctNames.add(districtList.get(k).getName());
                     }
                     districtsInfo.add(distrinctNames);
-                    // 市-区/县的数据，保存到mDistrictDatasMap
                 }
 
                 cityDatas.add(cityNames);
@@ -84,11 +82,8 @@ public class MainActivity extends Activity {
             OptionsPickerView pvOptions = new OptionsPickerView(this);
             //三级联动效果
             pvOptions.setPicker(provinceNames, cityDatas, districtDatas, true);
-            //设置选择的三级单位
-//        pwOptions.setLabels("省", "市", "区");
             pvOptions.setTitle("选择城市");
             pvOptions.setCyclic(false, false, false);
-            //设置默认选中的三级项目
             //监听确定选择按钮
             pvOptions.setOnoptionsSelectListener(new OptionsPickerView.OnOptionsSelectListener() {
 
@@ -102,14 +97,12 @@ public class MainActivity extends Activity {
                     tvOption.setText(address);
                 }
             });
-            //点击弹出选项选择器
             pvOptions.setOnDismissListener(new OnDismissListener() {
                 @Override
                 public void onDismiss(Object o) {
                 }
             });
             pvOptions.show();
-            // 省-市的数据，保存到mCitisDatasMap
 
         } catch (SAXException | ParserConfigurationException | IOException e) {
             e.printStackTrace();
