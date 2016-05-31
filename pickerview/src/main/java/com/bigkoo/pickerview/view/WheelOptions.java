@@ -1,12 +1,14 @@
 package com.bigkoo.pickerview.view;
 
-import java.util.ArrayList;
+import android.view.Gravity;
 import android.view.View;
 
 import com.bigkoo.pickerview.R;
 import com.bigkoo.pickerview.adapter.ArrayWheelAdapter;
 import com.bigkoo.pickerview.lib.WheelView;
 import com.bigkoo.pickerview.listener.OnItemSelectedListener;
+
+import java.util.ArrayList;
 
 public class WheelOptions<T> {
 	private View view;
@@ -79,6 +81,10 @@ public class WheelOptions<T> {
 		wv_option1.setTextSize(textSize);
 		wv_option2.setTextSize(textSize);
 		wv_option3.setTextSize(textSize);
+
+		wv_option1.setGravity(Gravity.CENTER);
+		wv_option2.setGravity(Gravity.CENTER);
+		wv_option3.setGravity(Gravity.CENTER);
 
 		if (this.mOptions2Items == null)
 			wv_option2.setVisibility(View.GONE);

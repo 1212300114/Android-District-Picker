@@ -3,16 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    <TextView
-        android:layout_margin="50dp"
-        android:id="@+id/tvTime"
-        android:text="时间"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
+
     <TextView
         android:id="@+id/tvOptions"
         android:layout_margin="50dp"
-        android:layout_below="@+id/tvTime"
         android:text="条件"
         android:layout_width="match_parent"
         android:layout_height="50dp"/>

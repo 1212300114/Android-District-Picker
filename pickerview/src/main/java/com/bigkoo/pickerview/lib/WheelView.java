@@ -371,6 +371,11 @@ public class WheelView extends View {
             } else {
                 String contentText = getContentText(visibles[counter]);
 
+                // my added code here
+                if (contentText.length() < 5) setTextSize(18);
+                else if (contentText.length() >= 5 && contentText.length() < 7) setTextSize(15);
+                else if (contentText.length() >= 7) setTextSize(11);
+
                 //计算开始绘制的位置
                 measuredCenterContentStart(contentText);
                 measuredOutContentStart(contentText);
