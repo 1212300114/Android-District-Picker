@@ -1,7 +1,7 @@
 Android-District-Picker
 ==========
 
-在android-pickerView 的基础上进行了部分修改， 主要添加了对字体长度的判读已达到字长时显示小字体字短时显示打字体
+在android-pickerView 的基础上进行了部分修改， 主要添加了对字体长度的判读已达到字长时显示小字体字短时显示大字体
 ```java
          String contentText = getContentText(visibles[counter]);
          // my added code here
