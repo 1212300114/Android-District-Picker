@@ -13,7 +13,7 @@ Android-District-Picker
 ## Demo image
 ![](https://github.com/1212300114/Android-District-Picker/blob/master/preview/pick-demo.gif)
 
-- [demo code here](https://github.com/1212300114/Android-District-Picker/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/MainActivity.java)
+- [All demo code is here](https://github.com/1212300114/Android-District-Picker/blob/master/app/src/main/java/com/bigkoo/pickerviewdemo/MainActivity.java)
 
 
 
